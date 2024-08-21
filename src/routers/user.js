@@ -6,7 +6,6 @@ const auth = require('../middleware/auth')
 
 router.post ('/users' , (req , res)=>{
     console.log(req.body)
-
     const user = new User (req.body)
     // console.log(user)
     user.save()
